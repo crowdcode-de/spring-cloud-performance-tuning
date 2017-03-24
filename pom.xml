@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>customer-service</module>
+		<module>user-service</module>
 	</modules>
 
 	<organization>
