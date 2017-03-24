@@ -6,6 +6,7 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
@@ -17,6 +18,7 @@ import javax.validation.constraints.NotNull;
 public class User {
 
     @Id
+    @GeneratedValue
     private Long id;
 
     @Version
