@@ -1,6 +1,7 @@
 package io.crowdcode.flaschenlager.product.controller;
 
 
+import io.crowdcode.flaschenlager.product.model.Product;
 import io.crowdcode.flaschenlager.product.repository.ProductRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(ProductController.class)
 public class ProductControllerTest {
 
-    private static final String PRODUCT_JSON = "{  \"email\": \"email_value\",  \"name\": \"name_value\",  \"password\": \"password_value\"}";
+    private static final String PRODUCT_JSON = "{ \"amount\": 0, \"description\": \"string\", \"name\": \"string\", \"unit\": \"string\", \"version\": 0}";
 
     private static final String PASSWORD_JSON = "{\"oldPassword\":\"secret2\",\"newPassword\":\"ZYX\"}";
 
@@ -36,7 +37,7 @@ public class ProductControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)).andExpect(status().isCreated());
 
-        verify(productRepository, times(1)).save(any());
+        verify(productRepository, times(1)).save(any(Product.class));
     }
 
 
