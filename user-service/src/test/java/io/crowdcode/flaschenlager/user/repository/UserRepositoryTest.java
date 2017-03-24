@@ -1,5 +1,6 @@
 package io.crowdcode.flaschenlager.user.repository;
 
+import io.crowdcode.flaschenlager.user.fixture.UserFixture;
 import io.crowdcode.flaschenlager.user.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +25,7 @@ public class UserRepositoryTest {
 
     @Test
     public void testCreateUser() throws Exception {
-        User user = buildDefaultUser();
+        User user = UserFixture.buildDefaultUser();
 
         userRepository.save(user);
 
@@ -33,15 +34,9 @@ public class UserRepositoryTest {
 
     @Test
     public void testFindByEmail() throws Exception {
-        User user = entityManager.persist(buildDefaultUser());
+        User user = entityManager.persist(UserFixture.buildDefaultUser());
 
         assertThat(userRepository.findByEmail("junit@crowdcode.io").getId(), is(user.getId()));
     }
 
-    private User buildDefaultUser() {
-        return new User()
-                .setName("Name")
-                .setPassword("secret")
-                .setEmail("junit@crowdcode.io");
-    }
 }
