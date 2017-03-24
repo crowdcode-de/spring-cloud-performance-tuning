@@ -30,7 +30,7 @@
 			<id>idueppe</id>
 			<name>Ingo Düppe</name>
 			<email>ingo.dueppe@crowdcode.io</email>
-			<organization>Crowdcode GmbH &amp; Co. KG</organization>
+			<organization>Crowdcode GmbH &amp;amp; Co. KG</organization>
 			<organizationUrl>https://www.crowdcode.io</organizationUrl>
 		</developer>
 	</developers>
