@@ -1,6 +1,7 @@
 package io.crowdcode.flaschenlager.user.controller;
 
 import io.crowdcode.flaschenlager.user.dto.PasswordRequest;
+import io.crowdcode.flaschenlager.user.dto.UserInfo;
 import io.crowdcode.flaschenlager.user.model.User;
 import io.crowdcode.flaschenlager.user.repository.UserRepository;
 import io.swagger.annotations.ApiOperation;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
@@ -36,21 +39,30 @@ public class UserController {
 
     @ApiOperation(value = "Find all users.")
     @GetMapping
-    public List<User> findAll() {
-        return userRepository.findAll();
+    public List<UserInfo> findAll() {
+        return userRepository
+                .findAll()
+                .stream()
+                .filter(u -> u != null)
+                .map(this::mapToUserInfo).collect(Collectors.toList());
     }
+
 
     @ApiOperation(value = "Change password.")
     @PutMapping("/{userId}/change-password")
-    public void updatePassword(Long userId, @RequestBody PasswordRequest passwordRequest) {
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void updatePassword(@PathVariable("userId") Long userId, @RequestBody PasswordRequest passwordRequest) {
         User user = userRepository.findOne(userId);
         if (user != null) {
-            if (user.getPassword() == passwordRequest.getOldPassword()) {
+            if (user.getPassword().equals(passwordRequest.getOldPassword())) {
                 user.setPassword(passwordRequest.getNewPassword());
                 userRepository.save(user);
             }
         }
     }
 
+    private UserInfo mapToUserInfo(User user) {
+        return new UserInfo().setId(user.getId()).setEmail(user.getEmail()).setName(user.getName());
+    }
 
 }
