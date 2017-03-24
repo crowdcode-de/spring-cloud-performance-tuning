@@ -9,8 +9,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class CustomerServiceApplicationTest {
 
-	@Test
-	public void testSpringBootApplicationStartup() throws Exception {
+    @Test
+    public void testSpringBootApplicationStartup() throws Exception {
 
-	}
+    }
 }
