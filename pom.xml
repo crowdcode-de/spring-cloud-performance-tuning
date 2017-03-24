@@ -19,6 +19,7 @@
         <module>customer-service</module>
         <module>user-service</module>
         <module>commons</module>
+        <module>product-service</module>
     </modules>
 
     <organization>
