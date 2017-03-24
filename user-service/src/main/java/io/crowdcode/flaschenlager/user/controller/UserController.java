@@ -45,8 +45,7 @@ public class UserController {
     public void updatePassword(Long userId, @RequestBody PasswordRequest passwordRequest) {
         User user = userRepository.findOne(userId);
         if (user != null) {
-            if (user.getPassword() == passwordRequest.getOldPassword())
-            {
+            if (user.getPassword() == passwordRequest.getOldPassword()) {
                 user.setPassword(passwordRequest.getNewPassword());
                 userRepository.save(user);
             }
