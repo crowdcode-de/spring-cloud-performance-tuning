@@ -11,6 +11,6 @@ public class CustomerServiceApplicationTest {
 
     @Test
     public void testSpringBootApplicationStartup() throws Exception {
-
+        // intentional empty test just to check if the spring boot context works.
     }
 }
