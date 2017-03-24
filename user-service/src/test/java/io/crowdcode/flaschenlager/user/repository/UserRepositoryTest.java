@@ -39,4 +39,5 @@ public class UserRepositoryTest {
         assertThat(userRepository.findByEmail("junit@crowdcode.io").getId(), is(user.getId()));
     }
 
+
 }
