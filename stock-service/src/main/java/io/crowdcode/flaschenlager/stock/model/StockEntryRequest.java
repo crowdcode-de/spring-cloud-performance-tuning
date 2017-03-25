@@ -8,8 +8,6 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import java.math.BigDecimal;
-
 @Getter
 @Setter
 @ToString
@@ -22,7 +20,5 @@ public class StockEntryRequest {
     private Long productId;
 
     private Long quantity;
-
-    private BigDecimal price;
 
 }
