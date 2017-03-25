@@ -27,6 +27,7 @@
         <module>user-service</module>
         <module>commons</module>
         <module>product-service</module>
+        <module>stock-service</module>
     </modules>
 
     <organization>
