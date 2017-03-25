@@ -20,6 +20,7 @@
         <spring-cloud.version>Camden.SR6</spring-cloud.version>
         <springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
         <lombok.version>1.16.16</lombok.version>
+        <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version>
     </properties>
 
     <modules>
@@ -72,6 +73,13 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${springfox-swagger-ui.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>${hibernate-jpa-2.1-api.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>

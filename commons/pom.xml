@@ -14,6 +14,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-swagger-ui.version}</version>
@@ -24,6 +29,17 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger-ui.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
     </dependencies>
+
 
 </project>
