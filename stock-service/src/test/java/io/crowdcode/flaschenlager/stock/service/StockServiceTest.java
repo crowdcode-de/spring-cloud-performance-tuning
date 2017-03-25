@@ -1,6 +1,7 @@
 package io.crowdcode.flaschenlager.stock.service;
 
 
+import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +21,7 @@ import static org.hamcrest.Matchers.*;
 @Transactional
 public class StockServiceTest {
 
-    public static final String STOCK = "STOCK_NAME_BY_SERVICE";
+    private static final String STOCKNAME = "STOCK_NAME_BY_SERVICE";
 
     @Autowired
     private StockService stockService;
@@ -30,13 +31,22 @@ public class StockServiceTest {
 
     @Test
     public void testRegisterStock() throws Exception {
-        Long stockId = stockService.registerStock("STOCK_NAME_BY_SERVICE");
+        Long stockId = stockService.registerStock(STOCKNAME);
         assertThat(stockId, is(notNullValue()));
     }
 
     @Test
+    public void testFindAllStock() throws Exception {
+        Long stockId = stockService.registerStock(STOCKNAME);
+        List<Stock> stocks = stockService.findAllStocks();
+
+        assertThat(stocks, hasSize(1));
+        assertThat(stocks, contains(new Stock().setId(stockId).setVersion(0l).setName(STOCKNAME)));
+    }
+
+    @Test
     public void testStockQuantities() throws Exception {
-        Long stockId = stockService.registerStock(STOCK);
+        Long stockId = stockService.registerStock(STOCKNAME);
         stockService.put(stockId, 1l, 1l, 1.1);
         stockService.put(stockId, 1l, 2l, 1.2);
         stockService.put(stockId, 2l, 3l, 1.3);

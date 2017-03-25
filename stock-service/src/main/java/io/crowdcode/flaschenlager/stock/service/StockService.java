@@ -31,6 +31,10 @@ public class StockService {
         return stockRepository.save(new Stock().setName(stockName)).getId();
     }
 
+    public List<Stock> findAllStocks() {
+        return stockRepository.findAll();
+    }
+
     public List<StockEntryQuantity> quantityOfAvailableProducts() {
         return stockEntryRepository.findAvailableProductQuantities();
     }
@@ -76,4 +80,6 @@ public class StockService {
             remains -= taking;
         }
     }
+
+
 }
