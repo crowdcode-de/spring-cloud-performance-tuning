@@ -10,10 +10,17 @@ public class ProductFixture {
         return new Product()
                 .setName("PRODUCT_NAME")
                 .setDescription("PRODUCT_DESCRIPTION")
-                .setAmount(123.45d)
-                .setUnit("1L");
+                .setAmount(1.0d)
+                .setUnit("Liter");
     }
 
+    public static Product buildProduct(String productName) {
+        return new Product()
+                .setName(productName)
+                .setDescription("PRODCUT_DESCRIPTION")
+                .setAmount(0.750d)
+                .setUnit("Liter");
+    }
 
     public static Product buildPersistentProduct() {
         return new Product()
@@ -22,6 +29,6 @@ public class ProductFixture {
                 .setAmount(123.45d)
                 .setUnit("1L")
                 .setId(-2L);
-
     }
+
 }
