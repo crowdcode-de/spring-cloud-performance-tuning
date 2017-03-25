@@ -60,7 +60,19 @@ public class StockEntryRepositoryTest {
         List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities();
 
         assertThat(quantities, hasSize(2));
+        assertThat(quantities, containsInAnyOrder(new StockEntryQuantity(1l, 3l), new StockEntryQuantity(2l, 7l)));
+    }
 
+    @Test
+    public void testFindByStockIdAndProductId() throws Exception {
+        Long stockId = persistStockEntries();
+
+        List<StockEntry> entries = stockEntryRepository.findByStockIdAndProductId(stockId, 1l);
+
+        assertThat(entries, hasSize(2));
+
+        assertThat(entries.get(0).getPrice(), is(equalTo(BigDecimal.valueOf(1.1))));
+        assertThat(entries.get(1).getPrice(), is(equalTo(BigDecimal.valueOf(1.2))));
     }
 
     private Long persistStockEntries() {
