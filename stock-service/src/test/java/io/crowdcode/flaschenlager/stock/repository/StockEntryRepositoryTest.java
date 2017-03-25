@@ -55,6 +55,15 @@ public class StockEntryRepositoryTest {
 
     @Test
     public void testStockQuantities() throws Exception {
+        Long stockId = persistStockEntries();
+
+        List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities();
+
+        assertThat(quantities, hasSize(2));
+
+    }
+
+    private Long persistStockEntries() {
         Stock stock = testEntityManager.persist(new Stock().setName("STOCK_NAME"));
 
         StockEntry[] entries = {
@@ -68,9 +77,6 @@ public class StockEntryRepositoryTest {
 
         Arrays.stream(entries).forEach(testEntityManager::persist);
 
-        List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities();
-
-        assertThat(quantities, hasSize(2));
-
+        return stock.getId();
     }
 }
