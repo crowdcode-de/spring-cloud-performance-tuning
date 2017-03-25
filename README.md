@@ -12,3 +12,10 @@ Swagger-UI: [http://localhost:9010/customer-service/swagger-ui.html](http://loca
 
 Swagger-UI [http://localhost:9015/user-service/swagger-ui.html](http://localhost:9015/user-service/swagger-ui.html)
 
+## PRODUCT-SERVICE
+
+Swagger-UI [http://localhost:9020/product-service/swagger-ui.html](http://localhost:9020/product-service/swagger-ui.html)
+
+## STOCK-SERVICE
+
+Swagger-UI [http://localhost:9025/stock-service/swagger-ui.html](http://localhost:9020/stock-service/swagger-ui.html)
