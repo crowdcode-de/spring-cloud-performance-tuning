@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
 @Accessors(chain = true)
 @EqualsAndHashCode(of = {"id", "version"})
 @ToString(exclude = "stock")
-@Table(indexes = @Index(name = "product_added", columnList = "productId,addedAt"))
+@Table(indexes = @Index(name = "stock_product_quantity_added", columnList = "stock_id,productid,quantity,addedat"))
 public class StockEntry {
 
     @Id
