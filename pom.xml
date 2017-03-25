@@ -29,6 +29,7 @@
         <module>commons</module>
         <module>product-service</module>
         <module>stock-service</module>
+        <module>accounting-service</module>
     </modules>
 
     <organization>
