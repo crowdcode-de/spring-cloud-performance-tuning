@@ -3,6 +3,7 @@ package io.crowdcode.flaschenlager.stock.model;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
@@ -21,6 +22,7 @@ import java.time.LocalDateTime;
 @Setter
 @Accessors(chain = true)
 @EqualsAndHashCode(of = {"id", "version"})
+@ToString(exclude = "stock")
 @Table(indexes = @Index(name = "product_added", columnList = "productId,addedAt"))
 public class StockEntry {
 
