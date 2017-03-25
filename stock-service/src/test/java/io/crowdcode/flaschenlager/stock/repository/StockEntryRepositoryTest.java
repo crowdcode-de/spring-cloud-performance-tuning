@@ -68,7 +68,7 @@ public class StockEntryRepositoryTest {
 
         Arrays.stream(entries).forEach(testEntityManager::persist);
 
-        List<StockEntryQuantity> quantities = stockEntryRepository.findStockQuantities();
+        List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities();
 
         assertThat(quantities, hasSize(2));
 

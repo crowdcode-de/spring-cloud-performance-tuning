@@ -5,6 +5,7 @@ import io.crowdcode.flaschenlager.stock.model.StockEntry;
 import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
 import io.crowdcode.flaschenlager.stock.repository.StockEntryRepository;
 import io.crowdcode.flaschenlager.stock.repository.StockRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Slf4j
 @Service
 @Transactional
 public class StockService {
@@ -27,8 +29,8 @@ public class StockService {
         return stockRepository.save(new Stock().setName(stockName)).getId();
     }
 
-    public List<StockEntryQuantity> calculateQuantities() {
-        return stockEntryRepository.findStockQuantities();
+    public List<StockEntryQuantity> quantityOfAvailableProducts() {
+        return stockEntryRepository.findAvailableProductQuantities();
     }
 
     public void put(Long stockId, Long productId, Long quantity, double price) {
@@ -43,5 +45,4 @@ public class StockService {
 
         stockEntryRepository.save(entry);
     }
-
 }

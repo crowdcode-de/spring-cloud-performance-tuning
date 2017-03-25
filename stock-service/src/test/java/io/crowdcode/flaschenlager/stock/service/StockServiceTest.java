@@ -39,7 +39,7 @@ public class StockServiceTest {
         stockService.put(stockId, 3l, 0l, 1.5);
         stockService.put(stockId, 3l, 0l, 1.6);
 
-        List<StockEntryQuantity> quantities = stockService.calculateQuantities();
+        List<StockEntryQuantity> quantities = stockService.quantityOfAvailableProducts();
 
         assertThat(quantities, hasSize(2));
         assertThat(quantities, containsInAnyOrder(new StockEntryQuantity(1l, 3l), new StockEntryQuantity(2l, 7l)));
