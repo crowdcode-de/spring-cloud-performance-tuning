@@ -22,8 +22,6 @@ public class ProductControllerTest {
 
     private static final String PRODUCT_JSON = "{ \"amount\": 0, \"description\": \"string\", \"name\": \"string\", \"unit\": \"string\", \"version\": 0}";
 
-    private static final String PASSWORD_JSON = "{\"oldPassword\":\"secret2\",\"newPassword\":\"ZYX\"}";
-
     @Autowired
     private MockMvc mvc;
 
