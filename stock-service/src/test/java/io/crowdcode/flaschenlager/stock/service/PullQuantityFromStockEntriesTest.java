@@ -35,7 +35,8 @@ public class PullQuantityFromStockEntriesTest {
         StockEntry[] entries = new StockEntry[]{
                 buildStockEntry(1l, 2l, 1.4),
                 buildStockEntry(1l, 1l, 1.2),
-                buildStockEntry(1l, 5l, 1.3)
+                buildStockEntry(1l, 5l, 1.3),
+                buildStockEntry(1l, 1l, 1.1)
         };
 
         when(repository.findByStockIdAndProductId(any(), any())).thenReturn(Arrays.asList(entries));
