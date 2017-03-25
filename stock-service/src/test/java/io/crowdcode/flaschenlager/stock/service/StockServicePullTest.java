@@ -1,7 +1,7 @@
 package io.crowdcode.flaschenlager.stock.service;
 
 
-import io.crowdcode.flaschenlager.stock.model.StockEntryRequest;
+import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,15 +42,15 @@ public class StockServicePullTest {
         entityManager.flush();
         entityManager.clear();
 
-        List<StockEntryRequest> pull = stockService.pull(1l, 1l, 6l);
+        List<StockEntryResponse> pull = stockService.pull(1l, 1l, 6l);
 
         entityManager.flush();
 
         assertThat(pull, hasSize(3));
         assertThat(pull, containsInAnyOrder(
-                new StockEntryRequest(1l, 2l, new BigDecimal("1.20")),
-                new StockEntryRequest(1l, 3l, new BigDecimal("1.30")),
-                new StockEntryRequest(1l, 1l, new BigDecimal("1.40"))));
+                new StockEntryResponse(1l, 2l, new BigDecimal("1.20")),
+                new StockEntryResponse(1l, 3l, new BigDecimal("1.30")),
+                new StockEntryResponse(1l, 1l, new BigDecimal("1.40"))));
 
     }
 }

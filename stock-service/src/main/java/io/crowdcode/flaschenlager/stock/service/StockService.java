@@ -3,7 +3,7 @@ package io.crowdcode.flaschenlager.stock.service;
 import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntry;
 import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
-import io.crowdcode.flaschenlager.stock.model.StockEntryRequest;
+import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
 import io.crowdcode.flaschenlager.stock.repository.StockEntryRepository;
 import io.crowdcode.flaschenlager.stock.repository.StockRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -56,17 +56,17 @@ public class StockService {
         stockEntryRepository.save(entry);
     }
 
-    public List<StockEntryRequest> pull(Long stockId, Long productId, Long quantity) {
+    public List<StockEntryResponse> pull(Long stockId, Long productId, Long quantity) {
         List<StockEntry> availableEntries = stockEntryRepository.findByStockIdAndProductId(stockId, productId);
 
-        List<StockEntryRequest> entries = new ArrayList<>();
+        List<StockEntryResponse> entries = new ArrayList<>();
 
         pullQuantityFromEntries(quantity, availableEntries, entries);
 
         return entries;
     }
 
-    private void pullQuantityFromEntries(Long quantity, List<StockEntry> availableEntries, List<StockEntryRequest> entries) {
+    private void pullQuantityFromEntries(Long quantity, List<StockEntry> availableEntries, List<StockEntryResponse> entries) {
         Long remains = quantity;
         for (StockEntry entry : availableEntries) {
             if (remains <= 0) {
@@ -74,7 +74,7 @@ public class StockService {
             }
             long taking = Math.min(entry.getQuantity(), remains);
 
-            entries.add(new StockEntryRequest()
+            entries.add(new StockEntryResponse()
                     .setProductId(entry.getProductId())
                     .setPrice(entry.getPrice())
                     .setQuantity(taking));
