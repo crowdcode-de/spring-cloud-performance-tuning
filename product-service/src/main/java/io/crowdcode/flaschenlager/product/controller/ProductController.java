@@ -33,6 +33,12 @@ public class ProductController {
         return productRepository.findAll();
     }
 
+    @ApiOperation(value = "Find one product")
+    @GetMapping(value = "/{productId}")
+    public Product findOne(@PathVariable("productId") Long productId) {
+        return productRepository.findOne(productId);
+    }
+
     @ApiOperation(value = "Create Product")
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
@@ -41,7 +47,7 @@ public class ProductController {
     }
 
     @ApiOperation(value = "Update Product")
-    @PutMapping
+    @PutMapping(value = "/{productId}")
     public void updateProduct(@PathVariable("productId") Long productId, @Valid @RequestBody Product product) {
         Product entity = productRepository.findOne(productId);
         if (entity != null) {

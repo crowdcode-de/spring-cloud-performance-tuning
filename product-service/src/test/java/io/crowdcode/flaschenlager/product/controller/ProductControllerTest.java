@@ -1,6 +1,7 @@
 package io.crowdcode.flaschenlager.product.controller;
 
 
+import io.crowdcode.flaschenlager.product.fixture.ProductFixture;
 import io.crowdcode.flaschenlager.product.model.Product;
 import io.crowdcode.flaschenlager.product.repository.ProductRepository;
 import org.junit.Test;
@@ -13,7 +14,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import java.util.Arrays;
+
 import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
@@ -38,5 +42,44 @@ public class ProductControllerTest {
         verify(productRepository, times(1)).save(any(Product.class));
     }
 
+
+    @Test
+    public void testUpdateProduct() throws Exception {
+        when(productRepository.findOne(1L)).thenReturn(ProductFixture.buildPersistentProduct());
+
+        mvc.perform(MockMvcRequestBuilders.put("/product/{productId}", 1L)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(PRODUCT_JSON)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
+        verify(productRepository, times(1)).save(any(Product.class));
+    }
+
+    @Test
+    public void testFindAll() throws Exception {
+        when(productRepository.findAll()).thenReturn(Arrays.asList(ProductFixture.buildDefaultProduct(), ProductFixture.buildPersistentProduct()));
+
+        mvc.perform(MockMvcRequestBuilders.get("/product")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(PRODUCT_JSON)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content()
+                        .json("[{\"id\":null,\"version\":null,\"name\":\"PRODUCT_NAME\",\"description\":\"PRODUCT_DESCRIPTION\",\"unit\":\"1L\",\"amount\":123.45},{\"id\":-2,\"version\":null,\"name\":\"PRODUCT_NAME_2\",\"description\":\"PRODUCT_DESCRIPTION_2\",\"unit\":\"1L\",\"amount\":123.45}]"));
+    }
+
+    @Test
+    public void testFindOne() throws Exception {
+        when(productRepository.findOne(1L)).thenReturn(ProductFixture.buildPersistentProduct());
+
+        mvc.perform(MockMvcRequestBuilders.get("/product/{productId}", 1L)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(PRODUCT_JSON)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content()
+                        .json("{}"));
+    }
 
 }
