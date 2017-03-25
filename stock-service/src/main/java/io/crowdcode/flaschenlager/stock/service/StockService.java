@@ -35,6 +35,10 @@ public class StockService {
         return stockRepository.findAll();
     }
 
+    public Stock findStock(Long stockId) {
+        return stockRepository.findOne(stockId);
+    }
+
     public List<StockEntryQuantity> quantityOfAvailableProducts() {
         return stockEntryRepository.findAvailableProductQuantities();
     }

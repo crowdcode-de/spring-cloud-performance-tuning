@@ -45,6 +45,14 @@ public class StockServiceTest {
     }
 
     @Test
+    public void testFindStock() throws Exception {
+        Long stockId = stockService.registerStock(STOCKNAME);
+        Stock stock = stockService.findStock(stockId);
+
+        assertThat(stock.getName(), is(STOCKNAME));
+    }
+
+    @Test
     public void testStockQuantities() throws Exception {
         Long stockId = stockService.registerStock(STOCKNAME);
         stockService.put(stockId, 1l, 1l, 1.1);
