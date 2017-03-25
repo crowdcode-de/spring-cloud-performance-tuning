@@ -57,7 +57,7 @@ public class StockEntryRepositoryTest {
     public void testStockQuantities() throws Exception {
         Long stockId = persistStockEntries();
 
-        List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities();
+        List<StockEntryQuantity> quantities = stockEntryRepository.findAvailableProductQuantities(stockId);
 
         assertThat(quantities, hasSize(2));
         assertThat(quantities, containsInAnyOrder(new StockEntryQuantity(1l, 3l), new StockEntryQuantity(2l, 7l)));

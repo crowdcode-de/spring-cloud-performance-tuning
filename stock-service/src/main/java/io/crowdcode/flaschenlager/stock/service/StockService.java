@@ -39,8 +39,8 @@ public class StockService {
         return stockRepository.findOne(stockId);
     }
 
-    public List<StockEntryQuantity> quantityOfAvailableProducts() {
-        return stockEntryRepository.findAvailableProductQuantities();
+    public List<StockEntryQuantity> quantityOfAvailableProducts(Long stockId) {
+        return stockEntryRepository.findAvailableProductQuantities(stockId);
     }
 
     public void put(Long stockId, Long productId, Long quantity, double price) {

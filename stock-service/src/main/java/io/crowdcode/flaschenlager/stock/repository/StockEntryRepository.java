@@ -11,8 +11,8 @@ import java.util.List;
 public interface StockEntryRepository extends JpaRepository<StockEntry, Long> {
 
     @Query("SELECT new io.crowdcode.flaschenlager.stock.model.StockEntryQuantity(e.productId, SUM(e.quantity)) " +
-            "FROM StockEntry e WHERE e.quantity >0 GROUP BY e.productId")
-    List<StockEntryQuantity> findAvailableProductQuantities();
+            "FROM StockEntry e LEFT JOIN e.stock s WHERE s.id = :stockId AND e.quantity >0 GROUP BY e.productId")
+    List<StockEntryQuantity> findAvailableProductQuantities(@Param("stockId") Long stockId);
 
 
     @Query("SELECT e FROM StockEntry e LEFT JOIN e.stock s " +
