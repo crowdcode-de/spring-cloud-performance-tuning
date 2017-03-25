@@ -1,7 +1,9 @@
 package io.crowdcode.flaschenlager.stock.model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Column;
@@ -15,6 +17,8 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @Accessors(chain = true)
+@EqualsAndHashCode(of = {"id", "version"})
+@ToString
 public class Stock {
 
     @Id
