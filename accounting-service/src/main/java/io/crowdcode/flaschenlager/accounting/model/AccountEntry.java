@@ -49,6 +49,9 @@ public class AccountEntry {
     private BigDecimal price;
 
     @NotNull
+    private Long productId;
+
+    @NotNull
     private String description;
 
     @NotNull
