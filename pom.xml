@@ -30,6 +30,7 @@
         <module>product-service</module>
         <module>stock-service</module>
         <module>accounting-service</module>
+        <module>zipkin-service</module>
     </modules>
 
     <organization>
@@ -91,5 +92,16 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
