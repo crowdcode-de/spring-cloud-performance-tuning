@@ -30,6 +30,7 @@
         <module>product-service</module>
         <module>stock-service</module>
         <module>accounting-service</module>
+        <module>eureka-service</module>
     </modules>
 
     <organization>
