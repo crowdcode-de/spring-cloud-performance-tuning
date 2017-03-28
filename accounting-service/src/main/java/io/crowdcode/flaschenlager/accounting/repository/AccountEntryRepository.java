@@ -13,4 +13,5 @@ public interface AccountEntryRepository extends JpaRepository<AccountEntry, Long
 
     List<AccountEntry> findByCustomerId(@Param("customerId") Long customerId);
 
+    List<AccountEntry> findByUserId(@Param("userId") Long userId);
 }

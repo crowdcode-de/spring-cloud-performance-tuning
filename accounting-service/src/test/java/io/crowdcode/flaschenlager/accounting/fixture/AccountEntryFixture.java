@@ -16,6 +16,7 @@ public class AccountEntryFixture {
         return new AccountEntry()
                 .setCustomerId(customerId)
                 .setUserId(userId)
+                .setProductId(1l)
                 .setQuantity(10l)
                 .setPrice(BigDecimal.valueOf(1.2d))
                 .setDescription("Description")

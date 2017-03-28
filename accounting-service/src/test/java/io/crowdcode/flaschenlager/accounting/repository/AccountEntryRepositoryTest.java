@@ -56,5 +56,17 @@ public class AccountEntryRepositoryTest {
         assertThat(entries, hasSize(3));
     }
 
+    @Test
+    public void testFindByUserId() throws Exception {
+        testEntityManager.persist(buildAccountEntry(1l, 1l));
+        testEntityManager.persist(buildAccountEntry(1l, 2l));
+        testEntityManager.persist(buildAccountEntry(1l, 3l));
+        testEntityManager.persist(buildAccountEntry(2l, 4l));
+
+        List<AccountEntry> entries = accountEntryRepository.findByUserId(4l);
+
+        assertThat(entries, hasSize(1));
+    }
+
 
 }
