@@ -36,6 +36,7 @@
         <module>zipkin-service</module>
         <module>eureka-service</module>
         <module>admin-service</module>
+        <module>hystrix-service</module>
     </modules>
 
     <organization>
