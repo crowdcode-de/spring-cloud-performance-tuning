@@ -1,7 +1,7 @@
 package io.crowdcode.flaschenlager.stock.service;
 
 
-import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

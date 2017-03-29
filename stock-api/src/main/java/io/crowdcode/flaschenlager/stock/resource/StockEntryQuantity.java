@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.stock.resources;
+package io.crowdcode.flaschenlager.stock.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -10,13 +10,16 @@ import lombok.experimental.Accessors;
 
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
 @Accessors(chain = true)
-@EqualsAndHashCode()
-@ToString()
 @AllArgsConstructor
 @NoArgsConstructor
-public class StockRegisterRequest {
+public class StockEntryQuantity {
 
-    private String name;
+    private Long productId;
+
+    private Long quantity;
+
 
 }

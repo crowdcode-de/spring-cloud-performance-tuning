@@ -3,7 +3,7 @@ package io.crowdcode.flaschenlager.stock.repository;
 
 import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntry;
-import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryQuantity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

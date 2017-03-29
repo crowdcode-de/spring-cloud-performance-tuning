@@ -51,7 +51,7 @@ public class StockControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().json("[{\"id\":1,\"name\": \"STOCK_NAME\",\"version\":1}]"));
+                .andExpect(content().json("[{\"stockId\":1,\"name\":\"STOCK_NAME\"}]"));
     }
 
     @Test
@@ -62,7 +62,7 @@ public class StockControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"id\":1,\"name\": \"STOCK_NAME\",\"version\":1}"));
+                .andExpect(content().json("{\"stockId\":1,\"name\":\"STOCK_NAME\"}s"));
 
         verify(stockService, times(1)).findStock(1l);
     }

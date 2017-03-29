@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.stock.model;
+package io.crowdcode.flaschenlager.stock.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

@@ -2,8 +2,8 @@ package io.crowdcode.flaschenlager.stock.fixture;
 
 import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntry;
-import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
-import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryQuantity;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

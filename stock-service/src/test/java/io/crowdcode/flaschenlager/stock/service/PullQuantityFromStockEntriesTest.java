@@ -2,7 +2,7 @@ package io.crowdcode.flaschenlager.stock.service;
 
 
 import io.crowdcode.flaschenlager.stock.model.StockEntry;
-import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
 import io.crowdcode.flaschenlager.stock.repository.StockEntryRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;

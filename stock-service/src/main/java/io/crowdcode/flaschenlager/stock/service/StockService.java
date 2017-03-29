@@ -2,8 +2,8 @@ package io.crowdcode.flaschenlager.stock.service;
 
 import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntry;
-import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
-import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryQuantity;
+import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
 import io.crowdcode.flaschenlager.stock.repository.StockEntryRepository;
 import io.crowdcode.flaschenlager.stock.repository.StockRepository;
 import lombok.extern.slf4j.Slf4j;
