@@ -37,6 +37,7 @@
         <module>eureka-service</module>
         <module>admin-service</module>
         <module>hystrix-service</module>
+        <module>api-gateway-service</module>
     </modules>
 
     <organization>
