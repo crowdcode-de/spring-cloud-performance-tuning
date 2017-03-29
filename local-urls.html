@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+<!--/*@thymesVar id="applauncherUrl" type="java.lang.String"*/-->
+<!--/*@thymesVar id="topmenubarUrl" type="java.lang.String"*/-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <title>Tmb GWT Webapp</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous" />
+
+
+</head>
+<body>
+
+<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+<noscript>
+    <div
+            style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled in order for this
+        application to display correctly.
+    </div>
+</noscript>
+
+<div class="container">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Landing Page</h1>
+        </div>
+
+
+        <div class="row">
+            <div class="list-group">
+                <h2>Services:</h2>
+                <a class="list-group-item" href="http://localhost:9025/swagger-ui.html#/stock-controller">
+                    Swagger Stock-Service
+                </a>
+                <a class="list-group-item" href="http://localhost:9000/swagger-ui.html#/order-controller">
+                    Swagger Order-Service
+                </a>
+                <a class="list-group-item" href="http://localhost:8761/">
+                    Eureka Discovery
+                </a>
+                <a class="list-group-item" href="http://localhost:9411/">
+                    Zipkin
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
