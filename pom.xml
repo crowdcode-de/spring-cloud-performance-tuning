@@ -38,6 +38,7 @@
         <module>admin-service</module>
         <module>hystrix-service</module>
         <module>api-gateway-service</module>
+        <module>stock-api</module>
     </modules>
 
     <organization>
@@ -68,6 +69,12 @@
             <dependency>
                 <groupId>io.crowdcode.flaschenlager</groupId>
                 <artifactId>commons</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.crowdcode.flaschenlager</groupId>
+                <artifactId>stock-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
