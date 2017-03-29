@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.stock.dto;
+package io.crowdcode.flaschenlager.stock.resources;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -8,18 +8,19 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
-import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
 @Accessors(chain = true)
-@EqualsAndHashCode()
-@ToString()
+@EqualsAndHashCode(of = {"id", "version"})
+@ToString(exclude = "stock")
 @AllArgsConstructor
 @NoArgsConstructor
-public class StockRegisterRequest {
+public class EntryReceiptRequest {
 
-    @NotNull
-    private String name;
+    private Long productId;
+    private Long quantity;
+    private BigDecimal price;
 
 }

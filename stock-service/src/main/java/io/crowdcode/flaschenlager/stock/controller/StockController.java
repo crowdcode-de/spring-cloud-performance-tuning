@@ -1,10 +1,11 @@
 package io.crowdcode.flaschenlager.stock.controller;
 
-import io.crowdcode.flaschenlager.stock.dto.EntryPullRequest;
-import io.crowdcode.flaschenlager.stock.dto.EntryReceiptRequest;
 import io.crowdcode.flaschenlager.stock.model.Stock;
 import io.crowdcode.flaschenlager.stock.model.StockEntryQuantity;
 import io.crowdcode.flaschenlager.stock.model.StockEntryResponse;
+import io.crowdcode.flaschenlager.stock.resources.EntryPullRequest;
+import io.crowdcode.flaschenlager.stock.resources.EntryReceiptRequest;
+import io.crowdcode.flaschenlager.stock.resources.StockRegisterRequest;
 import io.crowdcode.flaschenlager.stock.service.StockService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,8 +38,8 @@ public class StockController {
     @ApiOperation("Create new stock")
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void createStock(@RequestBody @Valid Stock stock) {
-        stockService.registerStock(stock.getName());
+    public void createStock(@RequestBody @Valid StockRegisterRequest stockRegisterRequest) {
+        stockService.registerStock(stockRegisterRequest.getName());
     }
 
     @ApiOperation("Get stock")

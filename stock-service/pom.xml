@@ -18,6 +18,11 @@
         </dependency>
 
         <dependency>
+            <groupId>io.crowdcode.flaschenlager</groupId>
+            <artifactId>stock-api</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
