@@ -3,7 +3,7 @@
 
 ## Service model
 
-![documentation/domain-services.svg](documentation/domain-services.svg)
+![documentation/domain-services.svg](https://raw.githubusercontent.com/crowdcode-de/spring-cloud-performance-tuning/master/documentation/domain-services.svg)
 
 
 ## API Documentation with [Swagger.io](https://www.swagger.io) and [Springfox.io](https://www.springfox.io)
