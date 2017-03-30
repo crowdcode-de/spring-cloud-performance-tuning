@@ -1,8 +1,8 @@
-package io.crowdcode.flaschenlager.apigateway.controller;
+package io.crowdcode.flaschenlager.order.controller;
 
 
-import io.crowdcode.flaschenlager.apigateway.resource.OrderRequest;
-import io.crowdcode.flaschenlager.apigateway.service.OrderService;
+import io.crowdcode.flaschenlager.order.resource.OrderRequest;
+import io.crowdcode.flaschenlager.order.service.OrderService;
 import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

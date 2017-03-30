@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.apigateway.config;
+package io.crowdcode.flaschenlager.order.config;
 
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

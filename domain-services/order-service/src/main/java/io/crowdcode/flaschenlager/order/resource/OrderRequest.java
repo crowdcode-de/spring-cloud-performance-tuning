@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.apigateway.resource;
+package io.crowdcode.flaschenlager.order.resource;
 
 import lombok.Getter;
 import lombok.Setter;

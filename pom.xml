@@ -39,6 +39,7 @@
         <module>cluster-services/admin-service</module>
         <module>cluster-services/hystrix-service</module>
         <module>cluster-services/api-gateway-service</module>
+        <module>domain-services/order-service</module>
     </modules>
 
     <organization>

@@ -1,4 +1,4 @@
-package io.crowdcode.flaschenlager.apigateway.service;
+package io.crowdcode.flaschenlager.order.service;
 
 import io.crowdcode.flaschenlager.stock.resource.EntryPullRequest;
 import io.crowdcode.flaschenlager.stock.resource.StockEntryResponse;
@@ -25,12 +25,6 @@ public class OrderService {
     public List<StockEntryResponse> order(Long productId, Long quantity) {
 
         log.info("Wait 1 Second");
-
-        try {
-            Thread.sleep(1);
-        } catch (InterruptedException e) {
-            log.error("Got interrupted.",e);
-        }
 
         EntryPullRequest entryPullRequest = new EntryPullRequest(productId, quantity);
 
