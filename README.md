@@ -1,5 +1,11 @@
 # Spring Cloud Example - Flaschenlager
 
+
+## Service model
+
+![documentation/domain-services.svg](documentation/domain-services.svg)
+
+
 ## API Documentation with [Swagger.io](https://www.swagger.io) and [Springfox.io](https://www.springfox.io)
 
 Tutorial: [Swagger 2 - Documentation for spring rest api](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)

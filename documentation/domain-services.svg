@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="92 15 836 385" width="836pt" height="385pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.3 
+    <dc:date>2017-03-30 21:11:47 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g>
+      <title>Layer 1</title>
+      <rect x="515.9055" y="141.73228" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="515.9055" y="141.73228" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="515.9055" y="150.64117" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="515.9055" y="150.64117" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(520.9055 170.36783)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="3.6811943" y="11" textLength="96.02344">Customer-Service</tspan>
+      </text>
+      <rect x="671.811" y="17.007874" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="671.811" y="17.007874" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="671.811" y="25.91676" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="671.811" y="25.91676" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(676.811 45.64342)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="17.020061" y="11" textLength="69.3457">User-Service</tspan>
+      </text>
+      <rect x="566.9291" y="257.95275" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="566.9291" y="257.95275" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="566.9291" y="266.86164" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="566.9291" y="266.86164" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(571.9291 286.5883)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="14.68217" y="11" textLength="74.02148">Stock-Service</tspan>
+      </text>
+      <rect x="289.13386" y="124.72441" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="289.13386" y="124.72441" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="289.13386" y="133.6333" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="289.13386" y="133.6333" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(294.13386 153.35995)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="8.008343" y="11" textLength="87.36914">Account-Service</tspan>
+      </text>
+      <line x1="606.4123" y1="150.3289" x2="687.0277" y2="85.86552" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="635.45555" y1="266.4032" x2="712.719" y2="88.90582" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="96.37795" y="17.007874" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="96.37795" y="17.007874" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="96.37795" y="25.91676" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="96.37795" y="25.91676" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(101.37795 45.64342)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="16.346233" y="11" textLength="70.69336">API-Gateway</tspan>
+      </text>
+      <line x1="402.003" y1="187.30284" x2="558.50694" y2="262.36422" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="403.0183" y1="164.64188" x2="505.53455" y2="172.31728" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="403.001" y1="144.2665" x2="661.80005" y2="71.41944" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="810.7087" y="323.1496" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="810.7087" y="323.1496" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="810.7087" y="332.0585" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="810.7087" y="332.0585" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(815.7087 351.78515)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="9.010296" y="11" textLength="85.36523">Product-Service</tspan>
+      </text>
+      <line x1="680.798" y1="308.88006" x2="800.6618" y2="340.93775" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="215.43307" y="331.65354" width="33.34872" height="8.908886" fill="white"/>
+      <rect x="215.43307" y="331.65354" width="33.34872" height="8.908886" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="215.43307" y="340.56243" width="113.38583" height="53.45332" fill="white"/>
+      <rect x="215.43307" y="340.56243" width="113.38583" height="53.45332" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(220.43307 360.2891)" fill="black">
+        <tspan font-family="Helvetica" font-size="12" font-weight="500" x="14.351116" y="11" textLength="74.68359">Order-Service</tspan>
+      </text>
+      <line x1="329.30825" y1="355.2991" x2="556.7505" y2="307.60904" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="281.81303" y1="340.0914" x2="332.81955" y2="196.88375" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="329.31885" y1="366.48128" x2="800.3097" y2="359.82885" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="163.36044" y1="79.83772" x2="258.3311" y2="330.83544" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="201.24614" y1="79.61433" x2="288.66228" y2="128.55422" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="210.26378" y1="52.64417" x2="661.411" y2="52.65007" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+    </g>
+  </g>
+</svg>
