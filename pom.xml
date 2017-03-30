@@ -27,18 +27,18 @@
     </properties>
 
     <modules>
-        <module>customer-service</module>
-        <module>user-service</module>
-        <module>commons</module>
-        <module>product-service</module>
-        <module>stock-service</module>
-        <module>accounting-service</module>
-        <module>zipkin-service</module>
-        <module>eureka-service</module>
-        <module>admin-service</module>
-        <module>hystrix-service</module>
-        <module>api-gateway-service</module>
-        <module>stock-api</module>
+        <module>domain-services/accounting-service</module>
+        <module>domain-services/commons</module>
+        <module>domain-services/customer-service</module>
+        <module>domain-services/product-service</module>
+        <module>domain-services/stock-api</module>
+        <module>domain-services/stock-service</module>
+        <module>domain-services/user-service</module>
+        <module>cluster-services/zipkin-service</module>
+        <module>cluster-services/eureka-service</module>
+        <module>cluster-services/admin-service</module>
+        <module>cluster-services/hystrix-service</module>
+        <module>cluster-services/api-gateway-service</module>
     </modules>
 
     <organization>
