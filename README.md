@@ -13,24 +13,30 @@
 ![https://raw.githubusercontent.com/crowdcode-de/spring-cloud-performance-tuning/master/documentation/domain-services.jpg](https://raw.githubusercontent.com/crowdcode-de/spring-cloud-performance-tuning/master/documentation/domain-services.jpg)
 
 
-## API Documentation with [Swagger.io](https://www.swagger.io) and [Springfox.io](https://www.springfox.io)
+## API Documentation
+
+The API is documented with [Swagger.io](http://swagger.io) and [Springfox.io](http://springfox.io).
 
 Tutorial: [Swagger 2 - Documentation for spring rest api](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
 
-## CUSTOMER-SERVICE
+### ACCOUNTING-SERVICE
 
-Swagger-UI: [http://localhost:9010/customer-service/swagger-ui.html](http://localhost:9010/customer-service/swagger-ui.html)
+Swagger-UI: [http://localhost:9030/swagger-ui.html](http://localhost:9030/swagger-ui.html)
 
-## USER-SERVICE
+### CUSTOMER-SERVICE
 
-Swagger-UI [http://localhost:9015/user-service/swagger-ui.html](http://localhost:9015/user-service/swagger-ui.html)
+Swagger-UI: [http://localhost:9010/swagger-ui.html](http://localhost:9010/swagger-ui.html)
 
-## PRODUCT-SERVICE
+### USER-SERVICE
 
-Swagger-UI [http://localhost:9020/product-service/swagger-ui.html](http://localhost:9020/product-service/swagger-ui.html)
+Swagger-UI [http://localhost:9015/swagger-ui.html](http://localhost:9015/swagger-ui.html)
 
-## STOCK-SERVICE
+### PRODUCT-SERVICE
 
-Swagger-UI [http://localhost:9025/stock-service/swagger-ui.html](http://localhost:9020/stock-service/swagger-ui.html)
+Swagger-UI [http://localhost:9020/swagger-ui.html](http://localhost:9020/swagger-ui.html)
+
+### STOCK-SERVICE
+
+Swagger-UI [http://localhost:9025/stock-service/swagger-ui.html](http://localhost:9025/stock-service/swagger-ui.html)
 
 
