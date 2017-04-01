@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?><project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -7,11 +6,11 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
 
-    <groupId>io.crowdcode.flaschenlager</groupId>
-    <artifactId>flaschenlager</artifactId>
+    <groupId>io.crowdcode.flaschenhals</groupId>
+    <artifactId>flaschenhals</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -27,19 +26,8 @@
     </properties>
 
     <modules>
-        <module>domain-services/accounting-service</module>
-        <module>domain-services/commons</module>
-        <module>domain-services/customer-service</module>
-        <module>domain-services/product-service</module>
-        <module>domain-services/stock-api</module>
-        <module>domain-services/stock-service</module>
-        <module>domain-services/user-service</module>
-        <module>cluster-services/zipkin-service</module>
-        <module>cluster-services/eureka-service</module>
-        <module>cluster-services/admin-service</module>
-        <module>cluster-services/hystrix-service</module>
-        <module>cluster-services/api-gateway-service</module>
-        <module>domain-services/order-service</module>
+        <module>cluster-services</module>
+        <module>domain-services</module>
     </modules>
 
     <organization>
@@ -68,13 +56,13 @@
             </dependency>
 
             <dependency>
-                <groupId>io.crowdcode.flaschenlager</groupId>
+                <groupId>io.crowdcode.flaschenhals</groupId>
                 <artifactId>commons</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>io.crowdcode.flaschenlager</groupId>
+                <groupId>io.crowdcode.flaschenhals</groupId>
                 <artifactId>stock-api</artifactId>
                 <version>${project.version}</version>
             </dependency>

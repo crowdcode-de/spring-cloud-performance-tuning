@@ -6,8 +6,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.crowdcode.flaschenlager</groupId>
-        <artifactId>flaschenlager</artifactId>
+        <groupId>io.crowdcode.flaschenhals</groupId>
+        <artifactId>domain-services</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.crowdcode.flaschenlager</groupId>
+            <groupId>io.crowdcode.flaschenhals</groupId>
             <artifactId>commons</artifactId>
         </dependency>
 

@@ -1,4 +1,4 @@
-# Spring Cloud Example - Flaschenlager
+# Spring Cloud Example - flaschenhals
 
 
 ## Service model
