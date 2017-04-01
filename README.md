@@ -5,6 +5,8 @@
 
 [![Build Status](https://travis-ci.org/crowdcode-de/spring-cloud-performance-tuning.svg?branch=master)](https://travis-ci.org/crowdcode-de/spring-cloud-performance-tuning)
 
+[![Dependency Status](https://www.versioneye.com/user/projects/58dff30426a5bb0038e421c9/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58dff30426a5bb0038e421c9)
+
 
 ## Service model
 
