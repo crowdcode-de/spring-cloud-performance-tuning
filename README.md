@@ -1,4 +1,9 @@
-# Spring Cloud Example - flaschenhals
+# Flaschenhals
+## A Spring Cloud Performance Example by CROWDCODE
+
+## Build Status
+
+[![Build Status](https://travis-ci.org/crowdcode-de/spring-cloud-performance-tuning.svg?branch=master)](https://travis-ci.org/crowdcode-de/spring-cloud-performance-tuning)
 
 
 ## Service model
