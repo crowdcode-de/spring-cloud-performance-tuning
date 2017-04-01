@@ -14,10 +14,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>accounting-service</module>
         <module>commons</module>
+        <module>order-service</module>
         <module>customer-service</module>
         <module>product-service</module>
+        <module>accounting-service</module>
         <module>stock-api</module>
         <module>stock-service</module>
         <module>user-service</module>
