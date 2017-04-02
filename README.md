@@ -41,6 +41,6 @@ Swagger-UI [http://localhost:9020/swagger-ui.html](http://localhost:9020/swagger
 
 #### STOCK-SERVICE
 
-Swagger-UI [http://localhost:9025/stock-service/swagger-ui.html](http://localhost:9025/stock-service/swagger-ui.html)
+Swagger-UI [http://localhost:9025/swagger-ui.html](http://localhost:9025/swagger-ui.html)
 
 
