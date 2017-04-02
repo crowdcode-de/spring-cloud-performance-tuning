@@ -19,23 +19,27 @@ The API is documented with [Swagger.io](http://swagger.io) and [Springfox.io](ht
 
 Tutorial: [Swagger 2 - Documentation for spring rest api](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
 
-### ACCOUNTING-SERVICE
+### Service-Port-Mapping
+
+...
+
+#### ACCOUNTING-SERVICE
 
 Swagger-UI: [http://localhost:9030/swagger-ui.html](http://localhost:9030/swagger-ui.html)
 
-### CUSTOMER-SERVICE
+#### CUSTOMER-SERVICE
 
 Swagger-UI: [http://localhost:9010/swagger-ui.html](http://localhost:9010/swagger-ui.html)
 
-### USER-SERVICE
+#### USER-SERVICE
 
 Swagger-UI [http://localhost:9015/swagger-ui.html](http://localhost:9015/swagger-ui.html)
 
-### PRODUCT-SERVICE
+#### PRODUCT-SERVICE
 
 Swagger-UI [http://localhost:9020/swagger-ui.html](http://localhost:9020/swagger-ui.html)
 
-### STOCK-SERVICE
+#### STOCK-SERVICE
 
 Swagger-UI [http://localhost:9025/stock-service/swagger-ui.html](http://localhost:9025/stock-service/swagger-ui.html)
 
